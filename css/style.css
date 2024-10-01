@@ -59,6 +59,19 @@
     border: 1px dashed black;
     padding:10px
   }
+  /* HOVER BEHAVIOURS */
+#sidebar h2:hover,
+#sidebar h3:hover,
+#sidebar h4:hover,
+#sidebar h5:hover,
+#sidebar h6:hover,
+#sidebar li:hover,
+#sidebar a:hover {
+  color: white;
+}
+#sidebar .fa-plus:hover {
+  /* background-color: currentColor; */
+}
   /*APP TOP*/
   .app-top{
     height: calc(100% - var(--player-height));
@@ -81,3 +94,169 @@
 
   background-color: hsl(218.57deg 25.93% 10.59%);
 }
+/* SIDEBAR */
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  width: var(--sidebar-width);
+  padding: 0.5px 0.5px;
+font-size: 0.8rem;
+  
+
+  background-color: black;
+  color: grey;
+}
+.sidebar-upper {
+  flex-grow: 1;
+  width: 100%;
+}
+.sidebar-upper i{
+  font-size: 1.3rem;
+}
+.logo{
+  width: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.nav-link-list .nav-link-item{
+  text-align: center;
+  margin: 1rem 0;
+}
+/* PLAYLIST */
+.playlist-section {
+  line-height: 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.playlist-title {
+  font-size: 1rem;
+  color: white;
+}
+#sidebar .playlist-create {
+  margin: 0.5rem 0;
+}
+#sidebar .fa-plus {
+  color: black;
+  background-color: grey;
+  padding: 5px;
+}
+
+
+.sidebar-lower{
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-lower hr{
+  margin: 0.5rem 0;
+  border: 1px solid currentColor;
+}
+.sidebar-lower .user {
+  margin-top: 0.5rem;
+}
+.fa-circle-user {
+  font-size: 1.5rem;
+}
+.user span{
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+}
+/* PLAYER */
+
+#player {
+  height: var(--player-height);
+
+  background-color: hsl(0deg 0% 15.69%);
+}
+
+/* MEDIA QUERY */
+
+/* SM */
+
+@media screen and (min-width: 576px) {
+  /* **************** DISPLAY CLASSES *************************** */
+
+  .d-sm-inline {
+    display: inline;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+  .d-sm-none {
+    display: none;
+  }
+
+  /* **************** ---------------- *************************** */
+
+  /* OVERRIDE */
+  :root {
+    --sidebar-width: 200px;
+  }
+  /* SIDEBAR */
+  #sidebar {
+    align-items: flex-start;
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  .nav-link-list .nav-link-item {
+    text-align: left;
+  }
+  .sidebar-lower {
+    text-align: left;
+  }
+}
+
+/* MD */
+
+@media screen and (min-width: 768px) {
+  /* **************** DISPLAY CLASSES *************************** */
+
+  .d-md-inline {
+    display: inline;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-inline-block {
+    display: inline-block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-none {
+    display: none;
+  }
+
+  /* **************** ---------------- *************************** */
+}
+
+/* LG */
+
+@media screen and (min-width: 992px) 
+  /* **************** DISPLAY CLASSES *************************** */
+
+ 
+  .d-lg-inline{
+    display: inline;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+  .d-lg-none {
+    display: none;
+  }
