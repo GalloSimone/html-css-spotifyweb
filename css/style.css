@@ -72,6 +72,31 @@
 #sidebar .fa-plus:hover {
   /* background-color: currentColor; */
 }
+
+.app-content-header .upgrade:hover {
+  height: 40px;
+  width: 220px;
+  font-size: 1rem;
+}
+.labels .label-item:hover{
+  color: white;
+}
+.app-content-main .card:hover img{
+  opacity: o 0.4;
+  cursor: pointer;
+}
+.app-content-main .card:hover .play-button {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+
+
   /*APP TOP*/
   .app-top{
     height: calc(100% - var(--player-height));
@@ -80,11 +105,40 @@
   .app-content-container {
     width: calc(100% - var(--sidebar-width));
   }
+
+
+
+
+
 .app-content-header{
   height: var(--app-content-header-height);
 
   background-color: hsl(213.33deg 29.03% 6.08%);
 }  
+
+.app-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.app-content-header .upgrade {
+  color: white;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 25px;
+
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
 /* APP CONTENT MAIN */
 
 .app-content-main {
@@ -94,6 +148,79 @@
 
   background-color: hsl(218.57deg 25.93% 10.59%);
 }
+
+.app-content-main {
+  color: grey;
+  padding: 1rem;
+}
+
+.app-content-main h1,
+.app-content-main h3 {
+  color: white;
+}
+
+.app-content-main h2 {
+  font-size: 1rem;
+}
+
+.app-content-main h3 {
+  font-size: 0.9rem;
+}
+.app-content-main h4 {
+  font-size: 0.7rem;
+}
+
+.app-content-main section {
+  margin: 1rem 0;
+}
+
+.app-content-main .card .song-title {
+  margin-bottom: 0.2rem;
+}
+
+
+
+/* LABELS*/
+.label-list{
+  display: flex;
+  justify-content: center;
+}
+.label-item{
+  padding: 10px 20px;
+  
+  color: grey;
+}
+.labels{
+  background-color: hsl(219 26% 11%);
+}
+
+
+.app-content-main .label-list{
+  display: flex;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.app-content-main .label-item {
+  text-transform: uppercase;
+  margin: 0 1rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+}
+.label-item .active {
+  border: 1px solid lime;
+  width: 30%;
+  position: relative;
+  width: 30%;
+  left: 35%;
+}
+.label-item .inactive {
+  border: 1px solid transparent;
+}
+
+
+
+
+
 /* SIDEBAR */
 
 #sidebar {
@@ -128,8 +255,9 @@ font-size: 0.8rem;
 /* PLAYLIST */
 .playlist-section {
   line-height: 2rem;
-  max-height: 300px;
+  max-height: 400px;
   overflow-y: auto;
+  flex-grow: 1;
 }
 .playlist-title {
   font-size: 1rem;
