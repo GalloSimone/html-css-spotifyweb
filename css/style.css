@@ -293,6 +293,47 @@ font-size: 0.8rem;
   color: white;
   font-size: 0.9rem;
 }
+/* RECENTLY PLAYED SECTION */
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+padding: 10px 20px;
+align-self: center;
+
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.text-container{
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.card-container{
+  background-color:#151a23 ;
+}
+h1{
+  color: white;
+  background-color: #151a23;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PLAYER */
 
 #player {
